@@ -44,7 +44,7 @@ PR 作成・更新
 | 種別 | 名前 | 内容 |
 | --- | --- | --- |
 | Secret | `OPENROUTER_API_KEY` | OpenRouter の API キー (必須) |
-| Variable | `NEMOTRON_MODEL` | 使用するモデル ID (任意。未指定なら `nvidia/llama-3.1-nemotron-70b-instruct`) |
+| Variable | `NEMOTRON_MODEL` | 使用するモデル ID (任意。未指定なら `nvidia/nemotron-3-super-120b-a12b`) |
 
 > 利用可能な Nemotron 系モデル一覧は [OpenRouter Models](https://openrouter.ai/models?q=nemotron) を参照してください。
 

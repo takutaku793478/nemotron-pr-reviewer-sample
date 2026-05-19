@@ -7,7 +7,7 @@ import sys
 import requests
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-DEFAULT_MODEL = "nvidia/llama-3.1-nemotron-70b-instruct"
+DEFAULT_MODEL = "nvidia/nemotron-3-super-120b-a12b"
 MAX_DIFF_CHARS = 60_000
 
 SYSTEM_PROMPT = (
