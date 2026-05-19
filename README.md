@@ -2,7 +2,7 @@
 
 GitHub の Pull Request に対して **NVIDIA Nemotron**（OpenRouter 経由）で自動コードレビューを実行し、結果をPRコメントとして投稿するサンプルプロジェクトです。
 
-> MASC × FriSti 検証用サンプル。コードは外部サーバには送信されず、GitHub Actions のランナー上でのみ処理されます（OpenRouter API 呼び出しを除く）。
+> FriSti 検証用サンプル。コードは外部サーバには送信されず、GitHub Actions のランナー上でのみ処理されます（OpenRouter API 呼び出しを除く）。
 
 ## アーキテクチャ
 
