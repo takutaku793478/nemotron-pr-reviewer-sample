@@ -58,7 +58,7 @@ def review(diff: str, *, model: str, api_key: str) -> str:
         headers={
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json",
-            "HTTP-Referer": "https://github.com/fristi-eng/nemotron-pr-reviewer-sample",
+            "HTTP-Referer": "https://github.com/takutaku793478/nemotron-pr-reviewer-sample",
             "X-Title": "Nemotron PR Reviewer Sample",
         },
         json={
