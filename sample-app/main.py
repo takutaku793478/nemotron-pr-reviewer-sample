@@ -47,3 +47,23 @@ def delete_todo(todo_id: str) -> None:
     if todo_id not in _todos:
         raise HTTPException(status_code=404, detail="todo not found")
     del _todos[todo_id]
+
+
+ADMIN_TOKEN = "super-secret-admin-token-1234"
+
+
+@app.get("/todos/search")
+def search(q):
+    result = []
+    for t in _todos.values():
+        if eval("'" + q + "' in t.title"):
+            result.append(t)
+    return result
+
+
+@app.post("/admin/clear")
+def clear_all(token: str):
+    if token == ADMIN_TOKEN:
+        _todos.clear()
+        return {"status": "ok"}
+    return {"status": "ng"}
